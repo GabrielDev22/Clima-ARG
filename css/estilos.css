@@ -127,7 +127,7 @@ body{
 }
 /* TABLA GRAFICA Y IMAGEN DEL CLIMA */
 .contenedor-tabla_grafica{
-    width: 70%;
+    width: 80%;
     border: 1px solid black;
     margin: 0 auto;
     margin-bottom: 50px;
@@ -149,8 +149,9 @@ body{
     border: 1px solid white;
 }
 .subtitulo-tablagrafica{
-    margin-top: 120px;
-    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 26px;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color:rgb(28, 25, 25);
     text-shadow: 1px 2px 3px #f1f2f3;
@@ -168,10 +169,104 @@ body{
    list-style: none;
 }
 span{
-    padding: 8px;
-    border: 2px solid black;
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-top: 1px;
+    padding-bottom: -5px;
+    border: 1px solid black;
+}
+.primer-span{
     background-color: #0000fe;
-    color: #f1f2f3;
+}
+.segundo-span{
+    background-color: #0077ff;
+}
+.tercer-span{
+    background-color: #46a9fa;
+}
+.cuarto-span{
+    background-color: #f30000;
+}
+.quinto-span{
+    background-color: #f39695;
+}
+.sexto-span{
+    background-color: #f5a301;
+}
+.septimo-span{
+    background-color: #ffdb63;
+}
+.octavo-span{
+    background-color:#ffff00;
+}
+.noveno-span{
+    background-color: #c6c700;
+}
+.decimo-span{
+    background-color: #969600;
+}
+.decimoprimero-span{
+    background-color: #96ff96;
+}
+.decimosegundo-span{
+    background-color: #63c764;
+}
+.decimotercero-span{
+    background-color: #329633;
+}
+.decimocuarto-span{
+    background-color: #c6ff4e;
+}
+.decimoquinto-span{
+    background-color: #66ff33;
+}
+.decimosexto-span{
+    background-color: #33c701;
+}
+.decimoseptimo-span{
+    background-color: #ff00fe;
+}
+.decimooctavo-span{
+    background-color: #c600c7;
+}
+.decimonoveno-span{
+    background-color: #963295;
+}
+.vigesimo-span{
+    background-color: #966495;
+}
+.vigesimoprimero-span{
+    background-color: #abb1ff;
+}
+.vigesimosegundo-span{
+    background-color: #5A77db;
+}
+.vigesimotercero-span{
+    background-color: #4c51b5;
+}
+.vigesimocuarto-span{
+    background-color: #320087;
+}
+.vigesimoquinto-span{
+    background-color: #00ffff;
+}
+.vigesimosexto-span{
+    background-color: #38c7ff;
+}
+.vigesimoseptimo-span{
+    background-color: #00737d;
+}
+.vigesimooctavo-span{
+    background-color: #00455e;
+}
+.vigesimonoveno-span{
+    background-color: #00455e;
+}
+.trigesimo-span{
+    background-color: #7b3e3e;
+}
+.trigesimoprimer-span{
+    background-color: #686868;
 }
 
 /* PARAMETROS CLIMATICOS / Estudio del tiempo atmosferico */

@@ -1,5 +1,5 @@
 let contenedorClima = document.querySelector('.contenedor-clima'),
-    contenedorImagen = document.querySelector('.contenedor-imagen')
+    contenedorImagen = document.querySelector('.contenedor-imagen');
 
 const searchClima = event => {
     event.preventDefault();
@@ -47,7 +47,9 @@ const renderClimaData = data => {
     contenedorImagen.appendChild(clima)
 
     contenedorClima.appendChild(card)
+} 
 
-    
-}
+
+
+
 

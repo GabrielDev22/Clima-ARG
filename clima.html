@@ -40,15 +40,28 @@
 </div>
 
     <div data-aos="fade-right">
-        <form action="" onsubmit="searchClima(event)">
-          <input type="text" name="weather" autocomplete="off" class="form-label">
+        <form action="" onsubmit="searchClima(event), searchForecast(event)">
+          <input type="text" name="weather" autocomplete="off" class="form-label" placeholder="Ciudad">
         </form>
     </div>
     
     <div class="contenedor-clima">
       <div data-aos="fade-right" class="contenedor-imagen">
-          <img src="img/jordan-_g51kA_xq2I-unsplash.jpg" alt="" class="imagen-ciudad">
+          <img src="img/tomas-nozina-UP22zkjJGZo-unsplash.jpg" alt="" class="imagen-ciudad">
+          <img src="img/map.svg" alt="" class="imagen-ubicacion">
       </div>
+    </div>
+
+    <div data-aos="fade-left"
+      data-aos-anchor="#example-anchor"
+      data-aos-offset="500"
+      data-aos-duration="700">
+      <h2 class="subtitulo">PREDICIONES PROXIMAS HORAS</h2>
+
+    <div class="contenedor-clima__forecast">
+      
+    </div>
+
     </div>
 
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

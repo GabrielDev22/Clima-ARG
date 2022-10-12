@@ -14,11 +14,16 @@ body{
     text-align: center;
 }
 .form-label{
+    color: #111;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
     width: 500px;
     height: 30px;
     display: flex;
-    border: 1px solid black;
+    border: 2px solid white;
     margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 50px #320087;
 }
 
 .form-label:hover{
@@ -35,42 +40,240 @@ body{
     border: 5px solid white;
     border-radius:  20px;
     margin-bottom: 100px;
-    box-shadow: 5px 5px 50px rgb(59, 143, 188);
+    box-shadow: 5px 5px 50px #320087;
 }
 .contenedor-imagen{
     width: 900px;
+    display: flex;
+    flex-direction: column;
+    text-shadow: 2px 1px 2px blue;
 }
+
+/* ESTILOS DE LA IMAGEN */
 
 .imagen-ciudad{
     position: absolute;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 6px;
     height: 590px;
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
-.card{
-    width: 100%;
-    background-color: rgb(29, 22, 22);
+.imagen-ubicacion{
+    width: 40px;
 }
 
 .titulo-pais{
     font-size: 50px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Noto Sans Mono', monospace;
     color: #fff;
-    text-shadow: 2px 1px 2px blue;
-    margin-bottom: 10px;
+    position: relative;
+    margin-left: 40px;
 }
 .clima{
+    width: 300px;
+    margin: 0 auto;
     color: #f1f2f3;
-    font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-family: 'Noto Sans Mono', monospace;
     position: relative;
-    text-shadow: 2px 1px 2px blue;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 10px;
 }
+.descripcion1{
+    color: #f1f2f3;
+    font-size: 24px;
+    font-family: 'Noto Sans Mono', monospace;
+    position: relative;
+    text-align: center;
+}
+.imagen1{
+    width: 100px;
+    object-fit: cover;
+    position: relative;
+    margin: 0 auto;
+}
+
+/* fecha */
+.contenedorFecha{
+    width: 200px;
+    display: flex;
+    margin-bottom: 30px;
+    margin-left: 60px;
+    font-family: 'Noto Sans Mono', monospace;
+}
+.dia{
+    color: #f1f2f3;
+    font-size: 25px;
+    position: relative;
+}
+.mes{
+    color: #f1f2f3;
+    font-size: 25px;
+    position: relative;
+}
+.year{
+    color: #f1f2f3;
+    font-size: 25px;
+    position: relative;
+}
+
+/* Card */
+
+.card{
+    width: 100%;
+    background-color: rgb(12, 20, 68);
+    border-radius: 6px;
+    text-shadow: 2px 1px 2px black;
+}
+
 .sensacionTermica{
     color: #f1f2f3;
-    font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-left: 50px;
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 20px;
 }
+
+.climaMax{
+    color: #f1f2f3;
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 20px;
+}
+
+.climaMin{
+    color: #f1f2f3;
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 20px;
+}
+
+.humedad{
+    color: #f1f2f3;
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 20px;
+}
+
+.presion{
+    color: #f1f2f3;
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 20px;
+}
+
+.viento{
+    color: #f1f2f3;
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 20px;
+}
+
+/* ESTILOS DE LAS PROYECCIONES DE LAS SIGUIENTES HORAS */
+
+.subtitulo{
+    display: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #f1f2f3;
+    text-shadow: 1px 2px 3px #320087;
+   text-align: center;
+}
+
+.contenedor-clima__forecast{
+    width: 100%;
+    height: 900px;
+    margin-bottom: 150px;
+    margin: 0 auto;
+    border: 1px solid white;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cardForecast{
+    width: 300px;
+    height: 350px;
+    margin-top: 50px;
+    border: 2px solid white;
+    color: #f1f2f3;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 26px;
+    background-color: rgb(12, 20, 68);
+    border-radius: 10px;
+}
+.cardForecast:hover{
+    box-shadow: 0 0 50px #6b28df;
+    transform: scale(1.1);
+}
+
+.horaClima{
+    font-size: 20px;
+    text-shadow: 2px 2px 3px black;
+    color: #f1f2f3;
+    font-weight: 500;
+}
+
+.climaForecast{
+    font-size: 20px;
+    text-shadow: 2px 2px 3px black;
+    color: #f1f2f3;
+    font-weight: 500;
+}
+
+.climaMaxForecast{
+    font-size: 20px;
+    text-shadow: 2px 2px 3px black;
+    color: #f1f2f3;
+    font-weight: 500;
+}
+
+.climaMinForecast{
+    font-size: 20px;
+    text-shadow: 2px 2px 3px black;
+    color: #f1f2f3;
+    font-weight: 500;
+}
+
+.humedadForecast{
+    font-size: 20px;
+    text-shadow: 2px 2px 3px black;
+    color: #f1f2f3;
+    font-weight: 500;
+}
+
+.presionForecast{
+    font-size: 20px;
+    text-shadow: 2px 2px 3px black;
+    color: #f1f2f3;
+    font-weight: 500;
+}
+
+.sensacionTermicaForecast{
+    font-size: 20px;
+    text-shadow: 2px 2px 3px black;
+    color: #f1f2f3;
+    font-weight: 500;
+}
+
+.descripcion-climaForecast{
+    font-size: 20px;
+    text-shadow: 2px 2px 3px black;
+    color: #f1f2f3;
+    font-weight: 500;
+}
+
+.vientoForecast{
+    font-size: 20px;
+    text-shadow: 2px 2px 3px black;
+    color: #f1f2f3;
+    font-weight: 500;
+}
+
+.imagenForecast{
+    font-size: 20px;
+    text-shadow: 2px 2px 3px black;
+    color: #f1f2f3;
+    font-weight: 500;
+}
+

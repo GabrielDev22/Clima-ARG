@@ -1,7 +1,7 @@
 let contenedorClima = document.querySelector('.contenedor-clima'),
     contenedorImagen = document.querySelector('.contenedor-imagen'),
     subtituloForecast = document.querySelector('.subtitulo'),
-    contenedorClimaForecast = document.querySelector('.contenedor-clima__forecast')
+    contenedorClimaForecast = document.querySelector('.contenedor-clima__forecast');
 
 const searchClima = event => {
     event.preventDefault();
@@ -163,12 +163,12 @@ const renderClimaInformacion = informacion => {
           /* ANIDANDO LA INFORMACION DE LA BASE DE DATOS A LA PAGINA Y A LOS ELEMENTOS */
            horaClima.textContent = `Horario: ${informacion.list[0].dt_txt}`
            clima.textContent = `Temperatura: ${(informacion.list[0].main.temp - 273.15).toFixed(1)}°C`
-           climaMax.textContent = `Temperatura: ${(informacion.list[0].main.temp_max - 273.15).toFixed(1)}°C`
-           climaMin.textContent = `Temperatura: ${(informacion.list[0].main.temp_min - 273.15).toFixed(1)}°C`
+           climaMax.textContent = `TemperaturaMax: ${(informacion.list[0].main.temp_max - 273.15).toFixed(1)}°C`
+           climaMin.textContent = `TemperaturaMin: ${(informacion.list[0].main.temp_min - 273.15).toFixed(1)}°C`
            humedad.textContent = `Humedad: ${informacion.list[0].main.humidity}`
            presion.textContent = `Presion: ${informacion.list[0].main.presurre}`
            viento.textContent = `Viento: ${informacion.list[0].wind.speed}`
-           sensacionTermicaForecast.textContent = `Sensaci on Termica: ${(informacion.list[0].main.feels_like - 273.15).toFixed(1)}°C`
+           sensacionTermicaForecast.textContent = `Sensacion Termica: ${(informacion.list[0].main.feels_like - 273.15).toFixed(1)}°C`
            descripcion.textContent = `Descripcion: ${informacion.list[0].weather[0].description}`
            imagenForecast.src = url1 + informacion.list[0].weather[0].icon + '.png';
 
@@ -178,6 +178,9 @@ const renderClimaInformacion = informacion => {
             cardForecastOne.appendChild(clima)
             cardForecastOne.appendChild(climaMax)
             cardForecastOne.appendChild(climaMin)
+            cardForecastOne.appendChild(humedad)
+            cardForecastOne.appendChild(presion)
+            cardForecastOne.appendChild(viento)
             cardForecastOne.appendChild(sensacionTermicaForecast)
             cardForecastOne.appendChild(descripcion)
             cardForecastOne.appendChild(imagenForecast)
@@ -214,12 +217,12 @@ const renderClimaInformacion = informacion => {
              
             horaClima1.textContent = `Horario: ${informacion.list[1].dt_txt}`
             clima1.textContent = `Temperatura: ${(informacion.list[1].main.temp - 273.15).toFixed(1)}°C`
-            climaMax1.textContent = `Temperatura: ${(informacion.list[1].main.temp_max - 273.15).toFixed(1)}°C`
-            climaMin1.textContent = `Temperatura: ${(informacion.list[1].main.temp_min - 273.15).toFixed(1)}°C`
+            climaMax1.textContent = `TemperaturaMax: ${(informacion.list[1].main.temp_max - 273.15).toFixed(1)}°C`
+            climaMin1.textContent = `TemperaturaMin: ${(informacion.list[1].main.temp_min - 273.15).toFixed(1)}°C`
             humedad1.textContent = `Humedad: ${informacion.list[1].main.humidity}`
             presion1.textContent = `Presion: ${informacion.list[1].main.presurre}`
             viento1.textContent = `Viento: ${informacion.list[1].wind.speed}`
-            sensacionTermicaForecast1.textContent = `Sensaci on Termica: ${(informacion.list[1].main.feels_like - 273.15).toFixed(1)}°C`
+            sensacionTermicaForecast1.textContent = `Sensacion Termica: ${(informacion.list[1].main.feels_like - 273.15).toFixed(1)}°C`
             descripcion1.textContent = `Descripcion: ${informacion.list[1].weather[0].description}`
             imagenForecast1.src = url1 + informacion.list[1].weather[0].icon + '.png';
 
@@ -228,6 +231,9 @@ const renderClimaInformacion = informacion => {
             cardForecastTwo.appendChild(clima1)
             cardForecastTwo.appendChild(climaMax1)
             cardForecastTwo.appendChild(climaMin1)
+            cardForecastTwo.appendChild(humedad1)
+            cardForecastTwo.appendChild(presion1)
+            cardForecastTwo.appendChild(viento1)
             cardForecastTwo.appendChild(sensacionTermicaForecast1)
             cardForecastTwo.appendChild(descripcion1)
             cardForecastTwo.appendChild(imagenForecast1)
@@ -263,12 +269,12 @@ const renderClimaInformacion = informacion => {
              
             horaClima2.textContent = `Horario: ${informacion.list[2].dt_txt}`
             clima2.textContent = `Temperatura: ${(informacion.list[2].main.temp - 273.15).toFixed(1)}°C`
-            climaMax2.textContent = `Temperatura: ${(informacion.list[2].main.temp_max - 273.15).toFixed(1)}°C`
-            climaMin2.textContent = `Temperatura: ${(informacion.list[2].main.temp_min - 273.15).toFixed(1)}°C`
+            climaMax2.textContent = `TemperaturaMax: ${(informacion.list[2].main.temp_max - 273.15).toFixed(1)}°C`
+            climaMin2.textContent = `TemperaturaMin: ${(informacion.list[2].main.temp_min - 273.15).toFixed(1)}°C`
             humedad2.textContent = `Humedad: ${informacion.list[2].main.humidity}`
             presion2.textContent = `Presion: ${informacion.list[2].main.presurre}`
             viento2.textContent = `Viento: ${informacion.list[2].wind.speed}`
-            sensacionTermicaForecast2.textContent = `Sensaci on Termica: ${(informacion.list[2].main.feels_like - 273.15).toFixed(1)}°C`
+            sensacionTermicaForecast2.textContent = `Sensacion Termica: ${(informacion.list[2].main.feels_like - 273.15).toFixed(1)}°C`
             descripcion2.textContent = `Descripcion: ${informacion.list[2].weather[0].description}`
             imagenForecast2.src = url1 + informacion.list[2].weather[0].icon + '.png';
 
@@ -278,6 +284,9 @@ const renderClimaInformacion = informacion => {
             cardForecastThree.appendChild(clima2)
             cardForecastThree.appendChild(climaMax2)
             cardForecastThree.appendChild(climaMin2)
+            cardForecastThree.appendChild(humedad2)
+            cardForecastThree.appendChild(presion2)
+            cardForecastThree.appendChild(viento2)
             cardForecastThree.appendChild(sensacionTermicaForecast2)
             cardForecastThree.appendChild(descripcion2)
             cardForecastThree.appendChild(imagenForecast2)
@@ -313,12 +322,12 @@ const renderClimaInformacion = informacion => {
              
             horaClima3.textContent = `Horario: ${informacion.list[3].dt_txt}`
             clima3.textContent = `Temperatura: ${(informacion.list[3].main.temp - 273.15).toFixed(1)}°C`
-            climaMax3.textContent = `Temperatura: ${(informacion.list[3].main.temp_max - 273.15).toFixed(1)}°C`
-            climaMin3.textContent = `Temperatura: ${(informacion.list[3].main.temp_min - 273.15).toFixed(1)}°C`
+            climaMax3.textContent = `TemperaturaMax: ${(informacion.list[3].main.temp_max - 273.15).toFixed(1)}°C`
+            climaMin3.textContent = `TemperaturaMin: ${(informacion.list[3].main.temp_min - 273.15).toFixed(1)}°C`
             humedad3.textContent = `Humedad: ${informacion.list[3].main.humidity}`
             presion3.textContent = `Presion: ${informacion.list[3].main.presurre}`
             viento3.textContent = `Viento: ${informacion.list[3].wind.speed}`
-            sensacionTermicaForecast3.textContent = `Sensaci on Termica: ${(informacion.list[3].main.feels_like - 273.15).toFixed(1)}°C`
+            sensacionTermicaForecast3.textContent = `Sensacion Termica: ${(informacion.list[3].main.feels_like - 273.15).toFixed(1)}°C`
             descripcion3.textContent = `Descripcion: ${informacion.list[3].weather[0].description}`
             imagenForecast3.src = url1 + informacion.list[3].weather[0].icon + '.png';
 
@@ -328,6 +337,9 @@ const renderClimaInformacion = informacion => {
             cardForecastFour.appendChild(clima3)
             cardForecastFour.appendChild(climaMax3)
             cardForecastFour.appendChild(climaMin3)
+            cardForecastFour.appendChild(humedad3)
+            cardForecastFour.appendChild(presion3)
+            cardForecastFour.appendChild(viento3)
             cardForecastFour.appendChild(sensacionTermicaForecast3)
             cardForecastFour.appendChild(descripcion3)
             cardForecastFour.appendChild(imagenForecast3)
@@ -363,12 +375,12 @@ const renderClimaInformacion = informacion => {
              
             horaClima4.textContent = `Horario: ${informacion.list[4].dt_txt}`
             clima4.textContent = `Temperatura: ${(informacion.list[4].main.temp - 273.15).toFixed(1)}°C`
-            climaMax4.textContent = `Temperatura: ${(informacion.list[4].main.temp_max - 273.15).toFixed(1)}°C`
-            climaMin4.textContent = `Temperatura: ${(informacion.list[4].main.temp_min - 273.15).toFixed(1)}°C`
+            climaMax4.textContent = `TemperaturaMax: ${(informacion.list[4].main.temp_max - 273.15).toFixed(1)}°C`
+            climaMin4.textContent = `TemperaturaMin: ${(informacion.list[4].main.temp_min - 273.15).toFixed(1)}°C`
             humedad4.textContent = `Humedad: ${informacion.list[4].main.humidity}`
             presion4.textContent = `Presion: ${informacion.list[4].main.presurre}`
             viento4.textContent = `Viento: ${informacion.list[4].wind.speed}`
-            sensacionTermicaForecast4.textContent = `Sensaci on Termica: ${(informacion.list[4].main.feels_like - 273.15).toFixed(1)}°C`
+            sensacionTermicaForecast4.textContent = `Sensacion Termica: ${(informacion.list[4].main.feels_like - 273.15).toFixed(1)}°C`
             descripcion4.textContent = `Descripcion: ${informacion.list[4].weather[0].description}`
             imagenForecast4.src = url1 + informacion.list[4].weather[0].icon + '.png';
 
@@ -378,6 +390,9 @@ const renderClimaInformacion = informacion => {
             cardForecastFive.appendChild(clima4)
             cardForecastFive.appendChild(climaMax4)
             cardForecastFive.appendChild(climaMin4)
+            cardForecastFive.appendChild(humedad4)
+            cardForecastFive.appendChild(presion4)
+            cardForecastFive.appendChild(viento4)
             cardForecastFive.appendChild(sensacionTermicaForecast4)
             cardForecastFive.appendChild(descripcion4)
             cardForecastFive.appendChild(imagenForecast4)
@@ -413,12 +428,12 @@ const renderClimaInformacion = informacion => {
              
             horaClima5.textContent = `Horario: ${informacion.list[5].dt_txt}`
             clima5.textContent = `Temperatura: ${(informacion.list[5].main.temp - 273.15).toFixed(1)}°C`
-            climaMax5.textContent = `Temperatura: ${(informacion.list[5].main.temp_max - 273.15).toFixed(1)}°C`
-            climaMin5.textContent = `Temperatura: ${(informacion.list[5].main.temp_min - 273.15).toFixed(1)}°C`
+            climaMax5.textContent = `TemperaturaMax: ${(informacion.list[5].main.temp_max - 273.15).toFixed(1)}°C`
+            climaMin5.textContent = `TemperaturaMin: ${(informacion.list[5].main.temp_min - 273.15).toFixed(1)}°C`
             humedad5.textContent = `Humedad: ${informacion.list[5].main.humidity}`
             presion5.textContent = `Presion: ${informacion.list[5].main.presurre}`
             viento5.textContent = `Viento: ${informacion.list[5].wind.speed}`
-            sensacionTermicaForecast5.textContent = `Sensaci on Termica: ${(informacion.list[5].main.feels_like - 273.15).toFixed(1)}°C`
+            sensacionTermicaForecast5.textContent = `Sensacion Termica: ${(informacion.list[5].main.feels_like - 273.15).toFixed(1)}°C`
             descripcion5.textContent = `Descripcion: ${informacion.list[5].weather[0].description}`
             imagenForecast5.src = url1 + informacion.list[5].weather[0].icon + '.png';
 
@@ -428,6 +443,9 @@ const renderClimaInformacion = informacion => {
             cardForecastSix.appendChild(clima5)
             cardForecastSix.appendChild(climaMax5)
             cardForecastSix.appendChild(climaMin5)
+            cardForecastSix.appendChild(humedad5)
+            cardForecastSix.appendChild(presion5)
+            cardForecastSix.appendChild(viento5)
             cardForecastSix.appendChild(sensacionTermicaForecast5)
             cardForecastSix.appendChild(descripcion5)
             cardForecastSix.appendChild(imagenForecast5)
@@ -464,12 +482,12 @@ const renderClimaInformacion = informacion => {
              
             horaClima6.textContent = `Horario: ${informacion.list[6].dt_txt}`
             clima6.textContent = `Temperatura: ${(informacion.list[6].main.temp - 273.15).toFixed(1)}°C`
-            climaMax6.textContent = `Temperatura: ${(informacion.list[6].main.temp_max - 273.15).toFixed(1)}°C`
-            climaMin6.textContent = `Temperatura: ${(informacion.list[6].main.temp_min - 273.15).toFixed(1)}°C`
+            climaMax6.textContent = `TemperaturaMax: ${(informacion.list[6].main.temp_max - 273.15).toFixed(1)}°C`
+            climaMin6.textContent = `TemperaturaMin: ${(informacion.list[6].main.temp_min - 273.15).toFixed(1)}°C`
             humedad6.textContent = `Humedad: ${informacion.list[6].main.humidity}`
-            presion6.textContent = `Presion: ${informacion.list[6].main.presurre}`
+            presion6.textContent = `Presion: ${informacion.list[6].main.pressure}`
             viento6.textContent = `Viento: ${informacion.list[6].wind.speed}`
-            sensacionTermicaForecast6.textContent = `Sensaci on Termica: ${(informacion.list[6].main.feels_like - 273.15).toFixed(1)}°C`
+            sensacionTermicaForecast6.textContent = `Sensacion Termica: ${(informacion.list[6].main.feels_like - 273.15).toFixed(1)}°C`
             descripcion6.textContent = `Descripcion: ${informacion.list[6].weather[0].description}`
             imagenForecast6.src = url1 + informacion.list[6].weather[0].icon + '.png';
 
@@ -479,6 +497,9 @@ const renderClimaInformacion = informacion => {
             cardForecastSeven.appendChild(clima6)
             cardForecastSeven.appendChild(climaMax6)
             cardForecastSeven.appendChild(climaMin6)
+            cardForecastSeven.appendChild(humedad6)
+            cardForecastSeven.appendChild(presion6)
+            cardForecastSeven.appendChild(viento6)
             cardForecastSeven.appendChild(sensacionTermicaForecast6)
             cardForecastSeven.appendChild(descripcion6)
             cardForecastSeven.appendChild(imagenForecast6)
@@ -514,12 +535,12 @@ const renderClimaInformacion = informacion => {
              
             horaClima7.textContent = `Horario: ${informacion.list[7].dt_txt}`
             clima7.textContent = `Temperatura: ${(informacion.list[7].main.temp - 273.15).toFixed(1)}°C`
-            climaMax7.textContent = `Temperatura: ${(informacion.list[7].main.temp_max - 273.15).toFixed(1)}°C`
-            climaMin7.textContent = `Temperatura: ${(informacion.list[7].main.temp_min - 273.15).toFixed(1)}°C`
+            climaMax7.textContent = `TemperaturaMax: ${(informacion.list[7].main.temp_max - 273.15).toFixed(1)}°C`
+            climaMin7.textContent = `TemperaturaMin: ${(informacion.list[7].main.temp_min - 273.15).toFixed(1)}°C`
             humedad7.textContent = `Humedad: ${informacion.list[7].main.humidity}`
             presion7.textContent = `Presion: ${informacion.list[7].main.presurre}`
             viento7.textContent = `Viento: ${informacion.list[7].wind.speed}`
-            sensacionTermicaForecast7.textContent = `Sensaci on Termica: ${(informacion.list[7].main.feels_like - 273.15).toFixed(1)}°C`
+            sensacionTermicaForecast7.textContent = `Sensacion Termica: ${(informacion.list[7].main.feels_like - 273.15).toFixed(1)}°C`
             descripcion7.textContent = `Descripcion: ${informacion.list[7].weather[0].description}`
             imagenForecast7.src = url1 + informacion.list[7].weather[0].icon + '.png';
 
@@ -529,6 +550,9 @@ const renderClimaInformacion = informacion => {
             cardForecastEight.appendChild(clima7)
             cardForecastEight.appendChild(climaMax7)
             cardForecastEight.appendChild(climaMin7)
+            cardForecastEight.appendChild(humedad7)
+            cardForecastEight.appendChild(presion7)
+            cardForecastEight.appendChild(viento7)
             cardForecastEight.appendChild(sensacionTermicaForecast7)
             cardForecastEight.appendChild(descripcion7)
             cardForecastEight.appendChild(imagenForecast7)
@@ -542,7 +566,6 @@ const renderClimaInformacion = informacion => {
             contenedorClimaForecast.appendChild(cardForecastSix)
             contenedorClimaForecast.appendChild(cardForecastSeven)
             contenedorClimaForecast.appendChild(cardForecastEight)
-
 }
 
 

@@ -182,7 +182,7 @@ body{
 
 .contenedor-clima__forecast{
     width: 100%;
-    height: 900px;
+    height: 100%;
     margin-bottom: 150px;
     margin: 0 auto;
     border: 1px solid white;
@@ -193,7 +193,7 @@ body{
 
 .cardForecast{
     width: 300px;
-    height: 350px;
+    height: 500px;
     margin-top: 50px;
     border: 2px solid white;
     color: #f1f2f3;
@@ -271,9 +271,134 @@ body{
 }
 
 .imagenForecast{
-    font-size: 20px;
-    text-shadow: 2px 2px 3px black;
-    color: #f1f2f3;
-    font-weight: 500;
+    width: 80px;
+    margin-left: 90px;
+}
+
+@media screen and (max-width: 600px){
+
+    body{
+        width: 100%;
+    }
+
+    .titulo-pagina{
+        width: 100%;
+    }
+
+    .form-label{
+        width: 80%;
+    }
+
+    /* ESTILOS DE LA INFORMACION DEL CLIMA DE LOS PAISES */
+
+    .contenedor-clima{
+        width: 100%;
+    }
+
+    .contenedor-imagen{
+        width: 50%;
+    }
+
+    .imagen-ciudad{
+        width: 300px;
+        object-fit: cover;
+    }
+
+    .imagen-ubicacion{
+        width: 40px;
+    }
+
+    .titulo-pais{
+        font-size: 30px;
+        margin-right: 20px;
+    }
+
+    .clima{
+        font-size: 20px;
+        margin-bottom: 90px;
+    }
+
+    .descripcion1{
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .imagen1{
+        width: 80px;
+    }
+
+    /* fecha */
+    .contenedorFecha{
+        margin: 0 auto;
+        margin-left: 30px;
+    }
+    .dia{
+        font-size: 20px;
+    }
+    .mes{
+        font-size: 20px;
+    }
+    .year{
+        font-size: 20px;
+    }
+    
+    /* Card */
+    
+    .card{
+        width: 100%;
+    }
+    
+    .sensacionTermica{
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    
+    .climaMax{
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    
+    .climaMin{
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    
+    .humedad{
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    
+    .presion{
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    
+    .viento{
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    
+    /* ESTILOS DE LAS PROYECCIONES DE LAS SIGUIENTES HORAS */
+
+    
+.subtitulo{
+    width: 100%;
+    font-size: 30px;
+}
+    
+    .contenedor-clima__forecast{
+        width: 300px;
+        height: 100%;
+        margin-bottom: 150px;
+        margin: 0 auto;
+        border: 1px solid white;
+        display: none;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .cardForecast{
+        width: 300px;
+    }
 }
 

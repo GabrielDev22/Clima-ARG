@@ -29,15 +29,37 @@
 </div>
 
     <div data-aos="fade-right">
-        <form action="" onsubmit="searchClima(event), searchForecast(event)">
+        <form action="" onsubmit="searchClima(event), searchForecast(event),searchImagen(event)">
           <input type="text" name="weather" autocomplete="off" class="form-label" placeholder="Ciudad">
         </form>
     </div>
     
     <div class="contenedor-clima">
       <div data-aos="fade-right" class="contenedor-imagen">
-          <img src="img/ciudadAleatoria.jpg" alt="ciudadAleatoria" class="imagen-ciudad">
-          <img src="img/map.svg" alt="" class="imagen-ubicacion">
+        <img src="img/ciudadAleatoria.jpg" alt="" class="imagen-ciudad" style="display: none;" id="1">
+        <img src="img/BuenosAires.jpg" alt="" class="imagen-ciudad" style="display: none;" id="2">
+        <img src="img/Barcelona.jpg" alt="" class="imagen-ciudad" style="display: none;" id="3">
+        <img src="img/Caracas.jpg" alt="" class="imagen-ciudad" style="display: none;" id="4">
+        <img src="img/Londres.jpg" alt="" class="imagen-ciudad" style="display: none;" id="5">
+        <img src="img/Madrid.jpg" alt="" class="imagen-ciudad" style="display: none;" id="6">
+        <img src="img/New york.jpg" alt="" class="imagen-ciudad" style="display: none;" id="7">
+        <img src="img/andorra.jpg" alt="" class="imagen-ciudad" style="display: none;" id="8">
+        <img src="img/berlin.jpg" alt="" class="imagen-ciudad" style="display: none;" id="9">
+        <img src="img/Bogota.jpg" alt="" class="imagen-ciudad" style="display: none;" id="10">
+        <img src="img/brasilia.jpg" alt="" class="imagen-ciudad" style="display: none;" id="11">
+        <img src="img/kabul.jpg" alt="" class="imagen-ciudad" style="display: none;" id="12">
+        <img src="img/Medellin.jpg" alt="" class="imagen-ciudad" style="display: none;" id="13">
+        <img src="img/washington.jpg" alt="" class="imagen-ciudad" style="display: none;" id="14">
+        <img src="img/Ámsterdam.jpg" alt="" class="imagen-ciudad" style="display: none;" id="15">
+        <img src="img/viena.jpg" alt="" class="imagen-ciudad" style="display: none;" id="16">
+        <img src="img/valencia.jpg" alt="" class="imagen-ciudad" style="display: none;" id="17">
+        <img src="img/tokio.jpg" alt="" class="imagen-ciudad" style="display: none;" id="18">
+        <img src="img/santiagoDeChile.jpg" alt="" class="imagen-ciudad" style="display: none;" id="19">
+        <img src="img/roma.jpg" alt="" class="imagen-ciudad" style="display: none;" id="20">
+        <img src="img/riodejaneiro.jpg" alt="" class="imagen-ciudad" style="display: none;" id="21">
+        <img src="img/quito.jpg" alt="" class="imagen-ciudad" style="display: none;" id="22">
+        <img src="img/paris.jpg" alt="" class="imagen-ciudad" style="display: none;" id="23">
+        <img src="img/map.svg" alt="" class="imagen-ubicacion">
       </div>
     </div>
 
@@ -57,6 +79,7 @@
       <script>
           AOS.init();
       </script>
+      <script src="js/imagenes.js"></script>
       <script src="js/main.js"></script>
     
 </body>

@@ -2,6 +2,7 @@ let contenedorClima = document.querySelector('.contenedor-clima'),
     contenedorImagen = document.querySelector('.contenedor-imagen'),
     subtituloForecast = document.querySelector('.subtitulo'),
     contenedorClimaForecast = document.querySelector('.contenedor-clima__forecast');
+    
 
 const searchClima = event => {
     event.preventDefault();
@@ -166,7 +167,7 @@ const renderClimaInformacion = informacion => {
            climaMax.textContent = `TemperaturaMax: ${(informacion.list[0].main.temp_max - 273.15).toFixed(1)}°C`
            climaMin.textContent = `TemperaturaMin: ${(informacion.list[0].main.temp_min - 273.15).toFixed(1)}°C`
            humedad.textContent = `Humedad: ${informacion.list[0].main.humidity}`
-           presion.textContent = `Presion: ${informacion.list[0].main.presurre}`
+           presion.textContent = `Presion: ${informacion.list[0].main.pressure}`
            viento.textContent = `Viento: ${informacion.list[0].wind.speed}`
            sensacionTermicaForecast.textContent = `Sensacion Termica: ${(informacion.list[0].main.feels_like - 273.15).toFixed(1)}°C`
            descripcion.textContent = `Descripcion: ${informacion.list[0].weather[0].description}`
@@ -220,7 +221,7 @@ const renderClimaInformacion = informacion => {
             climaMax1.textContent = `TemperaturaMax: ${(informacion.list[1].main.temp_max - 273.15).toFixed(1)}°C`
             climaMin1.textContent = `TemperaturaMin: ${(informacion.list[1].main.temp_min - 273.15).toFixed(1)}°C`
             humedad1.textContent = `Humedad: ${informacion.list[1].main.humidity}`
-            presion1.textContent = `Presion: ${informacion.list[1].main.presurre}`
+            presion1.textContent = `Presion: ${informacion.list[1].main.pressure}`
             viento1.textContent = `Viento: ${informacion.list[1].wind.speed}`
             sensacionTermicaForecast1.textContent = `Sensacion Termica: ${(informacion.list[1].main.feels_like - 273.15).toFixed(1)}°C`
             descripcion1.textContent = `Descripcion: ${informacion.list[1].weather[0].description}`
@@ -272,7 +273,7 @@ const renderClimaInformacion = informacion => {
             climaMax2.textContent = `TemperaturaMax: ${(informacion.list[2].main.temp_max - 273.15).toFixed(1)}°C`
             climaMin2.textContent = `TemperaturaMin: ${(informacion.list[2].main.temp_min - 273.15).toFixed(1)}°C`
             humedad2.textContent = `Humedad: ${informacion.list[2].main.humidity}`
-            presion2.textContent = `Presion: ${informacion.list[2].main.presurre}`
+            presion2.textContent = `Presion: ${informacion.list[2].main.pressure}`
             viento2.textContent = `Viento: ${informacion.list[2].wind.speed}`
             sensacionTermicaForecast2.textContent = `Sensacion Termica: ${(informacion.list[2].main.feels_like - 273.15).toFixed(1)}°C`
             descripcion2.textContent = `Descripcion: ${informacion.list[2].weather[0].description}`
@@ -325,7 +326,7 @@ const renderClimaInformacion = informacion => {
             climaMax3.textContent = `TemperaturaMax: ${(informacion.list[3].main.temp_max - 273.15).toFixed(1)}°C`
             climaMin3.textContent = `TemperaturaMin: ${(informacion.list[3].main.temp_min - 273.15).toFixed(1)}°C`
             humedad3.textContent = `Humedad: ${informacion.list[3].main.humidity}`
-            presion3.textContent = `Presion: ${informacion.list[3].main.presurre}`
+            presion3.textContent = `Presion: ${informacion.list[3].main.pressure}`
             viento3.textContent = `Viento: ${informacion.list[3].wind.speed}`
             sensacionTermicaForecast3.textContent = `Sensacion Termica: ${(informacion.list[3].main.feels_like - 273.15).toFixed(1)}°C`
             descripcion3.textContent = `Descripcion: ${informacion.list[3].weather[0].description}`
@@ -378,7 +379,7 @@ const renderClimaInformacion = informacion => {
             climaMax4.textContent = `TemperaturaMax: ${(informacion.list[4].main.temp_max - 273.15).toFixed(1)}°C`
             climaMin4.textContent = `TemperaturaMin: ${(informacion.list[4].main.temp_min - 273.15).toFixed(1)}°C`
             humedad4.textContent = `Humedad: ${informacion.list[4].main.humidity}`
-            presion4.textContent = `Presion: ${informacion.list[4].main.presurre}`
+            presion4.textContent = `Presion: ${informacion.list[4].main.pressure}`
             viento4.textContent = `Viento: ${informacion.list[4].wind.speed}`
             sensacionTermicaForecast4.textContent = `Sensacion Termica: ${(informacion.list[4].main.feels_like - 273.15).toFixed(1)}°C`
             descripcion4.textContent = `Descripcion: ${informacion.list[4].weather[0].description}`
@@ -431,7 +432,7 @@ const renderClimaInformacion = informacion => {
             climaMax5.textContent = `TemperaturaMax: ${(informacion.list[5].main.temp_max - 273.15).toFixed(1)}°C`
             climaMin5.textContent = `TemperaturaMin: ${(informacion.list[5].main.temp_min - 273.15).toFixed(1)}°C`
             humedad5.textContent = `Humedad: ${informacion.list[5].main.humidity}`
-            presion5.textContent = `Presion: ${informacion.list[5].main.presurre}`
+            presion5.textContent = `Presion: ${informacion.list[5].main.pressure}`
             viento5.textContent = `Viento: ${informacion.list[5].wind.speed}`
             sensacionTermicaForecast5.textContent = `Sensacion Termica: ${(informacion.list[5].main.feels_like - 273.15).toFixed(1)}°C`
             descripcion5.textContent = `Descripcion: ${informacion.list[5].weather[0].description}`
@@ -538,7 +539,7 @@ const renderClimaInformacion = informacion => {
             climaMax7.textContent = `TemperaturaMax: ${(informacion.list[7].main.temp_max - 273.15).toFixed(1)}°C`
             climaMin7.textContent = `TemperaturaMin: ${(informacion.list[7].main.temp_min - 273.15).toFixed(1)}°C`
             humedad7.textContent = `Humedad: ${informacion.list[7].main.humidity}`
-            presion7.textContent = `Presion: ${informacion.list[7].main.presurre}`
+            presion7.textContent = `Presion: ${informacion.list[7].main.pressure}`
             viento7.textContent = `Viento: ${informacion.list[7].wind.speed}`
             sensacionTermicaForecast7.textContent = `Sensacion Termica: ${(informacion.list[7].main.feels_like - 273.15).toFixed(1)}°C`
             descripcion7.textContent = `Descripcion: ${informacion.list[7].weather[0].description}`

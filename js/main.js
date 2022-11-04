@@ -110,8 +110,6 @@ const renderClimaData = data => {
     
 
     contenedorClima.appendChild(card)
-
-    form.reset()
 } 
 
 const renderClimaInformacion = informacion => {

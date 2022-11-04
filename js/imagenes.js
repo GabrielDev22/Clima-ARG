@@ -20,7 +20,11 @@ const imagenAleatoria = document.getElementById('1'),
       imagenRoma = document.getElementById('20'),
       imagenRioDeJaneiro = document.getElementById('21'),
       imagenQuito = document.getElementById('22'),
-      imagenParis = document.getElementById('23');
+      imagenParis = document.getElementById('23'),
+      imagenSantaFe = document.getElementById('24'),
+      imagenMendoza = document.getElementById('25'),
+      imagenLaPlata = document.getElementById('26'),
+      imagenCordoba = document.getElementById('27');
 
 
 const searchImagen = event => {
@@ -114,6 +118,22 @@ const searchImagen = event => {
 
         case 'paris':
             imagenParis.style.display = "block";
+        break;    
+
+        case 'cordoba':
+            imagenCordoba.style.display = "block";
+        break;    
+
+        case 'santa fe':
+            imagenSantaFe.style.display = "block";
+        break;    
+
+        case 'la plata':
+            imagenLaPlata.style.display = "block";
+        break;   
+        
+        case 'mendoza':
+            imagenMendoza.style.display = "block";
         break;    
         
         default:
